@@ -60,6 +60,11 @@ SAMPLE_POSTS = [
     "I'm happy for you, but sad that you're leaving",
     "Just sitting here waiting for the next class",
     "Pizza with my friends after a long day = best night 😊",
+    # Part 4: additional labeled posts for the data sensitivity experiment.
+    "Feeling exhausted but proud after finishing my project",
+    "Lowkey hopeful about tomorrow even though I'm tired",
+    "That concert was fire, best night with my friends",
+    "Oh great, another deadline moved to tonight",
 ]
 
 # Human labels for each post above.
@@ -85,6 +90,10 @@ TRUE_LABELS = [
     "mixed",  # I'm happy for you, but sad that you're leaving
     "neutral",  # Just sitting here waiting for the next class
     "positive",  # Pizza with my friends after a long day = best night 😊
+    "mixed",  # Feeling exhausted but proud after finishing my project
+    "mixed",  # Lowkey hopeful about tomorrow even though I'm tired
+    "positive",  # That concert was fire, best night with my friends
+    "negative",  # Oh great, another deadline moved to tonight
 ]
 
 # Each post has exactly one label at the same index in TRUE_LABELS.
