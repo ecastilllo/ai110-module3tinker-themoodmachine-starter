@@ -32,9 +32,10 @@ class MoodAnalyzer:
     def _word_signals(self, text: str) -> List[Tuple[str, int]]:
         """Return each matched word and its signed contribution.
 
-        Enhancement: a directly preceding not/no/never or n't contraction
-        reverses a word's polarity. This deliberately handles only adjacent
-        negation, so broader phrases and sarcasm remain limitations.
+        Enhancement: not/no/never or an n't contraction reverses polarity
+        directly or across one modifier (very/really/so/too). The short,
+        explicit window cannot cross punctuation or conjunctions.
+        Longer negation phrases and sarcasm remain limitations.
         """
         tokens = self.preprocess(text)
         signals = []
@@ -42,11 +43,17 @@ class MoodAnalyzer:
             value = int(token in self.positive_words) - int(token in self.negative_words)
             if value == 0:
                 continue
-            previous = tokens[index - 1] if index > 0 else ""
+            negation_index = index - 1
+            # Part 3 fix: allow exactly one modifier between negation and mood.
+            if negation_index >= 0 and tokens[negation_index] in {
+                "very", "really", "so", "too"
+            }:
+                negation_index -= 1
+            previous = tokens[negation_index] if negation_index >= 0 else ""
             negated = previous in {"not", "no", "never"} or previous.endswith("n't")
             if negated:
                 value = -value
-            phrase = previous + " " + token if negated else token
+            phrase = " ".join(tokens[negation_index:index + 1]) if negated else token
             signals.append((phrase, value))
         return signals
 
