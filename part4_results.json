@@ -1,0 +1,627 @@
+{
+  "python": "3.11.18",
+  "sklearn": "1.5.2",
+  "before": {
+    "training_rows": [
+      {
+        "text": "I love this class so much",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "Today was a terrible day",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Feeling tired but kind of hopeful",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "This is fine",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "So excited for the weekend",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "I am not happy about this",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Lowkey excited that I finally got this code working 😂",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "No cap, this week has been awful",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Got the internship! Still stressed about moving away 🥲",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "I absolutely love getting stuck in traffic 🙄",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "Submitted the assignment and closed my laptop",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "That exam was not bad at all",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "Great, my laptop crashed right before I could save",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "I'm happy for you, but sad that you're leaving",
+        "true": "mixed",
+        "rule": "mixed",
+        "ml": "mixed"
+      },
+      {
+        "text": "Just sitting here waiting for the next class",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "Pizza with my friends after a long day = best night 😊",
+        "true": "positive",
+        "rule": "neutral",
+        "ml": "positive"
+      }
+    ],
+    "probe_rows": [
+      {
+        "text": "That show was fire",
+        "true": "positive",
+        "rule": "neutral",
+        "ml": "positive"
+      },
+      {
+        "text": "I feel sick today",
+        "true": "negative",
+        "rule": "neutral",
+        "ml": "negative"
+      },
+      {
+        "text": "I love waiting in traffic",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "I'm not very happy with the result",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "I'm exhausted but proud of my progress",
+        "true": "mixed",
+        "rule": "neutral",
+        "ml": "mixed"
+      },
+      {
+        "text": "The meeting starts at noon",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "positive"
+      },
+      {
+        "text": "I am happy and excited",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "This is awful and terrible",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      }
+    ],
+    "original_rows": [
+      {
+        "text": "I love this class so much",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "Today was a terrible day",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Feeling tired but kind of hopeful",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "This is fine",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "So excited for the weekend",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "I am not happy about this",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Lowkey excited that I finally got this code working 😂",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "No cap, this week has been awful",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Got the internship! Still stressed about moving away 🥲",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "I absolutely love getting stuck in traffic 🙄",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "Submitted the assignment and closed my laptop",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "That exam was not bad at all",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "Great, my laptop crashed right before I could save",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "I'm happy for you, but sad that you're leaving",
+        "true": "mixed",
+        "rule": "mixed",
+        "ml": "mixed"
+      },
+      {
+        "text": "Just sitting here waiting for the next class",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "Pizza with my friends after a long day = best night 😊",
+        "true": "positive",
+        "rule": "neutral",
+        "ml": "positive"
+      }
+    ],
+    "correct_counts": {
+      "training": {
+        "rule": 11,
+        "ml": 16,
+        "total": 16
+      },
+      "original16": {
+        "rule": 11,
+        "ml": 16,
+        "total": 16
+      },
+      "probes": {
+        "rule": 4,
+        "ml": 6,
+        "total": 8
+      }
+    },
+    "label_counts": {
+      "positive": 5,
+      "negative": 5,
+      "mixed": 3,
+      "neutral": 3
+    },
+    "vocabulary_size": 79,
+    "example_ml_prediction": "negative",
+    "example_ml_winning_class_contributions": [
+      {
+        "token": "absolutely",
+        "contribution": 0.2342246931168761
+      },
+      {
+        "token": "getting",
+        "contribution": 0.2342246931168761
+      },
+      {
+        "token": "in",
+        "contribution": 0.2342246931168761
+      },
+      {
+        "token": "love",
+        "contribution": 0.08023090845868719
+      },
+      {
+        "token": "stuck",
+        "contribution": 0.2342246931168761
+      },
+      {
+        "token": "traffic",
+        "contribution": 0.2342246931168761
+      }
+    ]
+  },
+  "after": {
+    "training_rows": [
+      {
+        "text": "I love this class so much",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "Today was a terrible day",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Feeling tired but kind of hopeful",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "This is fine",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "So excited for the weekend",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "I am not happy about this",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Lowkey excited that I finally got this code working 😂",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "No cap, this week has been awful",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Got the internship! Still stressed about moving away 🥲",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "I absolutely love getting stuck in traffic 🙄",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "Submitted the assignment and closed my laptop",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "That exam was not bad at all",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "Great, my laptop crashed right before I could save",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "I'm happy for you, but sad that you're leaving",
+        "true": "mixed",
+        "rule": "mixed",
+        "ml": "mixed"
+      },
+      {
+        "text": "Just sitting here waiting for the next class",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "Pizza with my friends after a long day = best night 😊",
+        "true": "positive",
+        "rule": "neutral",
+        "ml": "positive"
+      },
+      {
+        "text": "Feeling exhausted but proud after finishing my project",
+        "true": "mixed",
+        "rule": "neutral",
+        "ml": "mixed"
+      },
+      {
+        "text": "Lowkey hopeful about tomorrow even though I'm tired",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "That concert was fire, best night with my friends",
+        "true": "positive",
+        "rule": "neutral",
+        "ml": "positive"
+      },
+      {
+        "text": "Oh great, another deadline moved to tonight",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      }
+    ],
+    "probe_rows": [
+      {
+        "text": "That show was fire",
+        "true": "positive",
+        "rule": "neutral",
+        "ml": "positive"
+      },
+      {
+        "text": "I feel sick today",
+        "true": "negative",
+        "rule": "neutral",
+        "ml": "negative"
+      },
+      {
+        "text": "I love waiting in traffic",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "I'm not very happy with the result",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "I'm exhausted but proud of my progress",
+        "true": "mixed",
+        "rule": "neutral",
+        "ml": "mixed"
+      },
+      {
+        "text": "The meeting starts at noon",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "positive"
+      },
+      {
+        "text": "I am happy and excited",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "This is awful and terrible",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      }
+    ],
+    "original_rows": [
+      {
+        "text": "I love this class so much",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "Today was a terrible day",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Feeling tired but kind of hopeful",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "This is fine",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "So excited for the weekend",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "I am not happy about this",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Lowkey excited that I finally got this code working 😂",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "No cap, this week has been awful",
+        "true": "negative",
+        "rule": "negative",
+        "ml": "negative"
+      },
+      {
+        "text": "Got the internship! Still stressed about moving away 🥲",
+        "true": "mixed",
+        "rule": "negative",
+        "ml": "mixed"
+      },
+      {
+        "text": "I absolutely love getting stuck in traffic 🙄",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "Submitted the assignment and closed my laptop",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "That exam was not bad at all",
+        "true": "positive",
+        "rule": "positive",
+        "ml": "positive"
+      },
+      {
+        "text": "Great, my laptop crashed right before I could save",
+        "true": "negative",
+        "rule": "positive",
+        "ml": "negative"
+      },
+      {
+        "text": "I'm happy for you, but sad that you're leaving",
+        "true": "mixed",
+        "rule": "mixed",
+        "ml": "mixed"
+      },
+      {
+        "text": "Just sitting here waiting for the next class",
+        "true": "neutral",
+        "rule": "neutral",
+        "ml": "neutral"
+      },
+      {
+        "text": "Pizza with my friends after a long day = best night 😊",
+        "true": "positive",
+        "rule": "neutral",
+        "ml": "positive"
+      }
+    ],
+    "correct_counts": {
+      "training": {
+        "rule": 11,
+        "ml": 20,
+        "total": 20
+      },
+      "original16": {
+        "rule": 11,
+        "ml": 16,
+        "total": 16
+      },
+      "probes": {
+        "rule": 4,
+        "ml": 6,
+        "total": 8
+      }
+    },
+    "label_counts": {
+      "positive": 6,
+      "negative": 6,
+      "mixed": 5,
+      "neutral": 3
+    },
+    "vocabulary_size": 94,
+    "example_ml_prediction": "negative",
+    "example_ml_winning_class_contributions": [
+      {
+        "token": "absolutely",
+        "contribution": 0.23077516344878304
+      },
+      {
+        "token": "getting",
+        "contribution": 0.23077516344878304
+      },
+      {
+        "token": "in",
+        "contribution": 0.23077516344878304
+      },
+      {
+        "token": "love",
+        "contribution": 0.07223179259866583
+      },
+      {
+        "token": "stuck",
+        "contribution": 0.23077516344878304
+      },
+      {
+        "token": "traffic",
+        "contribution": 0.23077516344878304
+      }
+    ]
+  },
+  "chosen_failure_explanation": "Tokens = ['i', 'absolutely', 'love', 'getting', 'stuck', 'in', 'traffic', '🙄']; positive = ['love']; negative = []; score = 1; label = positive"
+}
